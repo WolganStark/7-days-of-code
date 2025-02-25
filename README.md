@@ -1,6 +1,6 @@
 <h1 align="center">7 Days of Code - ALURA LATAM</h1>
 <p align="center"><img src="https://github.com/user-attachments/assets/9518b3d2-3f44-4a9e-a344-98f744fb13e5"></p>
-<p align="center">Este repositorio tiene como objetivo hacer un seguimiento de mi desarrollo del challenge 7 Days Of Code, impulsado por Alura LATAM, en dónde me encuentro estudiando en el programa ONE.</p>
+<p align="center">Este repositorio tiene como objetivo hacer un seguimiento de mi desarrollo del challenge 7 Days Of Code, impulsado por Alura LATAM, en dónde me encuentro estudiando en el programa ONE. #7DaysOfCode</p>
 
 ## :hammer:Días del proyecto
 
