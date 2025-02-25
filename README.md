@@ -1,5 +1,5 @@
 <h1 align="center">7 Days of Code - ALURA LATAM</h1>
-<p align="center"><img src="https://github.com/user-attachments/assets/7e46e567-7034-4ed2-a068-79952e32f0ce"></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/9518b3d2-3f44-4a9e-a344-98f744fb13e5"></p>
 <p align="center">Este repositorio tiene como objetivo hacer un seguimiento de mi desarrollo del challenge 7 Days Of Code, impulsado por Alura LATAM, en dónde me encuentro estudiando en el programa ONE.</p>
 
 ## :hammer:Funcionalidades del proyecto
@@ -13,3 +13,4 @@
 - `HTML`: El lenguaje de marcado por excelencia para el desarrollo WEB.
 - `CSS`: El lenguaje para la definición de estilos de la WEB.
 - `JavaScript`: Dónde la magía ocurre y la lógica de todo el sórteo ocurre.
+
