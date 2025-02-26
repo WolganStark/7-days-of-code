@@ -85,26 +85,29 @@ body{
 
 .elementos__inputs__subtitulo{
     font-family: var(--fuente-raleway);
+    display: flex;
     font-weight: 300;
-    font-size: 2.5rem;    
+    font-size: 2.5rem;
+    justify-content: center;    
 }
 
 .elementos__inputs__div{
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 1000px;
     margin-top: 20px;
 }
 
-.elementos__inputs__div__input{
-    width: 75%;
+.elementos__inputs__div__input{    
+    width: 100%;
     padding: 10px;
-    border: 2px solid #000;
+    border: 2px solid #000000;
     border-radius: 25px 0 0 25px;
     font-size: 1.2rem;
     font-family: var(--fuente-raleway);
     font-weight: 500;
+    
 }
 
 .elementos__inputs__div__button{
@@ -114,6 +117,22 @@ body{
     font-family: var(--fuente-raleway);
     font-weight: 500;
     font-size: 1.2rem;
+}
+.elementos__inputs__div__button:hover{
+    background-color: var(--color-terciario);
+    cursor: pointer;
+}
+
+.elementos__inputs__div__button:disabled{
+    background-color: #D3D3D3;
+    cursor: not-allowed;
+}
+
+.elementos__inputs__respuestas__texto{
+    font-family: var(--fuente-raleway);
+    font-weight: 200;    
+    font-size: 1.9rem;
+    text-align: center;
 }
 
 .elementos__imagen{
