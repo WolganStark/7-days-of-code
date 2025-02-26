@@ -16,4 +16,4 @@ Simplente hay que escribir los datos en el espacio designado para ello y hacer c
 ### :white_check_mark:Tecnologías utilizadas
 - `HTML`: El lenguaje de marcado por excelencia para el desarrollo WEB.
 - `CSS`: El lenguaje de estilos utilizado en el desarrollo WEB.
-- `JavaScript`: Dónde la magía ocurre y la lógica de todo el sórteo ocurre.
+- `JavaScript`: Dónde la magía ocurre y la lógica de todo el reto sucede detrás de cámaras.
