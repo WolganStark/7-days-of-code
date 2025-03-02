@@ -11,9 +11,14 @@
 Simplente hay que escribir los datos en el espacio designado para ello y hacer click en añadir, de manera que el sistema guarde sus respuestas.
 <p align="center"><img src="https://github.com/user-attachments/assets/fe861225-9e71-41dd-a68a-4d70069c91b7"></p>
 
+3. `Estructuras de control de flujo`: El tercer día del reto consiste en aprovechar las estructuras de control de flujo en JavaScript, tales como `for` o `while` para interactuar con el usuario y conocer sus gustos a la hora de aprender sobre programación y sobre tecnología.
+La manera de interactúar con la página es responder a las preguntas como se indican.
+<p align ="center"> <img src="https://github.com/user-attachments/assets/cdfe7525-dd25-4fe8-854f-c18f473250cb"></p>
+
 
 
 ### :white_check_mark:Tecnologías utilizadas
 - `HTML`: El lenguaje de marcado por excelencia para el desarrollo WEB.
 - `CSS`: El lenguaje de estilos utilizado en el desarrollo WEB.
 - `JavaScript`: Dónde la magía ocurre y la lógica de todo el reto sucede detrás de cámaras.
+
