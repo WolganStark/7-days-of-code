@@ -19,21 +19,21 @@
     </header>
         <main class="elementos">
         <section class="elementos__contenido">
-            <h1 class="elementos__contenido__titulo">7 Days Of Code - Día 3</h1>
-            <h2 class="elementos__contenido__subtitulo">Estructuras de control de flujo.</h2>
-            <p class="elementos__contenido__texto">En esta página encontrarás el desarrollo del reto correspondiente al tercer día.</p>
-            <p class="elementos__contenido__texto">Siguiendo con la dinamica del reto del segundo día, la idea es seguir interactuando con el usuario, de manera que se sienta parte del entorno WEB, pero ahora utilizando estructura de control de flujo, como los ciclos "for" o "while".</p>
-            <p class="elementos__contenido__texto">Te invito a participar e interactuar con la página.</p>            
+            <h1 class="elementos__contenido__titulo">7 Days Of Code - Día 4</h1>
+            <h2 class="elementos__contenido__subtitulo">Juego del número secreto.</h2>
+            <p class="elementos__contenido__texto">En esta página encontrarás el desarrollo del reto correspondiente al cuarto día.</p>
+            <p class="elementos__contenido__texto">El reto del cuarto día consiste en programar el tipico juego que haciamos con nuestros amigos, en el que intentabamos adivinar un número, el cambio es que ahora será el navegador el que de manera pseudo-aleatoria escoja el número que debemos adivinar</p>
+            <p class="elementos__contenido__texto">Te invito a jugar</p>            
         </section>
         <section class ="elementos__inputs">
-            <h2 class="elementos__inputs__subtitulo" id="preguntas" aria-live="polite"></h2>
+            <h2 class="elementos__inputs__subtitulo" id="numero-secreto" aria-live="polite">Adivina un número del 0 al 10</h2>
             <div class="elementos__inputs__div">
-                <input type="text" id="respuesta" class="elementos__inputs__div__input" placeholder="Escribe tu respuesta">
-                <button class="elementos__inputs__div__button" id="button" onclick="agregarRespuesta()">Añadir</button>
+                <input type="text" id="respuesta" class="elementos__inputs__div__numero" placeholder="Adivina el número">
+                <button class="elementos__inputs__div__boton-numero" id="intento" onclick="verificarIntento()">Intentar</button>
+                <button class="elementos__inputs__div__boton-numero-reiniciar" id="reiniciar" onclick="reiniciarJuego()" disabled>Nuevo juego</button>
             </div>
             <div class="elementos__inputs__respuestas">
-                <p class="elementos__inputs__respuestas__texto" id="respuestas" aria.live="polite"></p>
-                <ul id="listaTecnologias" class="elementos__inputs__respuestas__texto" aria-labelledby="listaTecnologias" role="list"></ul>
+                <p class="elementos__inputs__respuestas__texto" id="resultado" aria.live="polite"></p>                
             </div>
         </section>
     </main>

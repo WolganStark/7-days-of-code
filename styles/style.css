@@ -110,6 +110,16 @@ body{
     
 }
 
+.elementos__inputs__div__numero{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 25px 0 0 25px;
+    font-size: 1.2rem;
+    font-family: var(--fuente-raleway);
+    font-weight: 500;
+}
+
 .elementos__inputs__div__button{
     width: 25%;
     justify-content: center;
@@ -124,8 +134,41 @@ body{
 }
 
 .elementos__inputs__div__button:disabled{
+    background-color: #898989;
+    cursor: not-allowed;
+}
+
+.elementos__inputs__div__boton-numero{
+    width: 25%;
+    justify-content: center;
+    border-radius: 0 0px 0px 0;
+    font-family: var(--fuente-raleway);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.elementos__inputs__div__boton-numero:hover{
+    background-color: var(--color-terciario);
+    cursor: pointer;
+}
+
+.elementos__inputs__div__boton-numero-reiniciar:hover{
+    background-color: var(--color-terciario);
+    cursor: pointer;
+}
+
+.elementos__inputs__div__boton-numero-reiniciar:disabled{
     background-color: #D3D3D3;
     cursor: not-allowed;
+}
+
+.elementos__inputs__div__boton-numero-reiniciar{
+    width: 25%;
+    justify-content: center;
+    border-radius: 0 25px 25px 0;
+    font-family: var(--fuente-raleway);
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 .elementos__inputs__respuestas__texto{
