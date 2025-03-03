@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>7 Days of Code</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="index.html">Home</a>
+            <a class="header__menu__link" href="dia1.html">Día 1</a>
+            <a class="header__menu__link" href="dia2.html">Día 2</a>
+            <a class="header__menu__link" href="dia3.html">Día 3</a>
+            <a class="header__menu__link" href="dia4.html">Día 4</a>
+            <a class="header__menu__link" href="dia5.html">Día 5</a>
+            <a class="header__menu__link" href="dia6.html">Día 6</a>
+        </nav>
+    </header>
+    <main class="elementos">
+        <section class="elementos__contenido">
+            <h1 class="elementos__contenido__titulo">7 Days Of Code - Día 6</h1>
+            <h2 class="elementos__contenido__subtitulo">Eliminación de los elementos de la lista</h2>
+            <p class="elementos__contenido__texto">En esta página encontrarás el desarrollo del reto correspondiente al quinto día.</p>
+            <p class="elementos__contenido__texto">La idea del reto es aprender a utilizar los "Arrays" de JavaScript para ayudar con la lista de la compra y organizarlo por categorías, me tomé la libertad creativa de utilizar la etiqueta "select" para crear una lista desplegable con las diferentes categorias de la lista y mejorar la experiencia de usuario.</p>
+            <p class="elementos__contenido__texto">Te invito a participar e interactuar con la página.</p>            
+        </section>
+        <section class ="elementos__inputs">
+            <h2 class="elementos__inputs__subtitulo" id="preguntas" aria-live="polite"></h2>
+            <div class="elementos__inputs__div">                
+                <select name="categorias" id="categoria" class="elementos__inputs__div__select">
+                    <option value="selecciona">Selecciona una categoría</option>
+                    <option value="frutas">Frutas</option>
+                    <option value="verduras">Verduras</option>
+                    <option value="carnes">Carnes</option>
+                    <option value="lacteos">Lácteos</option>
+                    <option value="aseo">Aseo</option>
+                    <option value="congelados">Congelados</option>
+                    <option value="dulces">Dulces</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <input type="text" id="respuesta" class="elementos__inputs__div__input" placeholder="Escribe tu compra">
+                <button class="elementos__inputs__div__button" id="button" onclick="agregarRespuesta()">Añadir</button>
+            </div>
+            <div class="elementos__inputs__respuestas">                
+                <ul id="listaCompras" class="elementos__inputs__respuestas__texto" aria-labelledby="listaTecnologias" role="list"></ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"><p>Desarollado por Nicolás Staffelbach</p></footer>
+    <script src="./js/app6.js" defer></script>
+</body>
+</html>

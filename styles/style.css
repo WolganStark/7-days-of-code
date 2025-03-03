@@ -92,7 +92,7 @@ body{
 }
 
 .elementos__inputs__div{
-    display: flex;
+    display: flex;    
     justify-content: center;
     width: 100%;
     max-width: 1000px;
@@ -103,11 +103,29 @@ body{
     width: 100%;
     padding: 10px;
     border: 2px solid #000000;
-    border-radius: 25px 0 0 25px;
+    border-radius: 0 0 0 0;
+    font-size: 1.2rem;
+    font-family: var(--fuente-raleway);
+    font-weight: 500;    
+}
+
+.elementos__inputs__div__select{
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius:25px 0 0 25px;
     font-size: 1.2rem;
     font-family: var(--fuente-raleway);
     font-weight: 500;
-    
+    background-color: var(--color-terciario);  
+}
+.elementos__inputs__div__select:hover{
+    cursor: pointer;      
+}
+
+.elementos__inputs__div__select:disabled{
+    background-color: #D3D3D3;
+    cursor: not-allowed;
 }
 
 .elementos__inputs__div__numero{
