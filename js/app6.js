@@ -8,6 +8,8 @@ let verduras = [];
 let otros = [];
 let preguntaInicial = '¿Deseas agregar un producto a la lista? Responde si o no';
 let preguntaCompra = '¿Qué deseas agregar a la lista? Recuerda seleccionar la categoría del producto, según la lista desplegable';
+let preguntaBorrar = '¿Deseas borrar algún producto de la lista? Responde si o no';
+let preguntaBorrarProducto = '¿Qué producto deseas borrar de la lista? Recuerda seleccionar la categoría del producto, según la lista desplegable';
 let estado = 0;
 
 function asignarTextoElemento(elemento, texto) {
@@ -24,10 +26,8 @@ function agregarRespuesta(){
             document.getElementById('respuesta').value = '';
             estado = 1;
             return;
-        } else if (document.getElementById('respuesta').value === 'no'){
-            asignarTextoElemento('preguntas', 'Gracias por usar la aplicación');
-            listaCompra();
-            condicionesIniciales();
+        } else if (document.getElementById('respuesta').value === 'no'){                     
+            estado = 2;
             return;
         } else {
             alert ('La respuesta no es válida');
@@ -68,6 +68,131 @@ function agregarRespuesta(){
             case 'otros':
                 otros.push(respuesta);
                 condicionesIniciales();                
+                break;
+            default:
+                alert('No se ha seleccionado una categoría');
+                break;
+        }
+    } else if (estado === 2){
+        if (frutas.length === 0 && lacteos.length === 0 && congelados.length === 0 && carnes.length === 0 && dulces.length === 0 && aseo.length === 0 && verduras.length === 0 && otros.length === 0){
+            alert('Gracias por utilizar la aplicación');
+            condicionesIniciales();            
+            return;
+        } else {
+            asignarTextoElemento('preguntas', preguntaBorrar);
+            document.getElementById('respuesta').value = '';
+            estado = 3;
+            return;
+        }
+    } else if (estado === 3){
+        if (document.getElementById('respuesta').value === 'si'){
+            asignarTextoElemento('preguntas', preguntaBorrarProducto);
+            document.getElementById('categoria').removeAttribute('disabled');
+            document.getElementById('respuesta').value = '';
+            listaCompra();
+            estado = 4;
+            return;
+        } else if (document.getElementById('respuesta').value === 'no'){                     
+            alert('Gracias por utilizar la aplicación');
+            listaCompra();
+            condicionesIniciales();
+            return;
+        } else {
+            alert ('La respuesta no es válida');
+            return;
+        }
+    } else if (estado === 4){        
+        let categoria = document.getElementById('categoria').value;
+        let respuesta = document.getElementById('respuesta').value;
+        let index = 0;
+        switch (categoria){
+            case 'frutas':
+                index = frutas.indexOf(respuesta);
+                if (index > -1){
+                    frutas.splice(index, 1);
+                    alert(`El producto ${respuesta} ha sido eliminado de la lista`);                    
+                } else{
+                    alert(`El producto ${respuesta} no se encuentra en la lista`);
+                }                
+                listaCompra();
+                condicionesIniciales();
+                break;
+            case 'lacteos':
+                index = lacteos.indexOf(respuesta);
+                if (index > -1){
+                    lacteos.splice(index, 1);
+                    alert(`El producto ${respuesta} ha sido eliminado de la lista`);                   
+                } else{
+                    alert(`El producto ${respuesta} no se encuentra en la lista`);
+                }   
+                listaCompra();
+                condicionesIniciales();
+                break;
+            case 'congelados':
+                index = congelados.indexOf(respuesta);
+                if (index > -1){
+                    congelados.splice(index, 1);
+                    alert(`El producto ${respuesta} ha sido eliminado de la lista`);
+                } else{
+                    alert(`El producto ${respuesta} no se encuentra en la lista`);
+                }   
+                listaCompra();
+                condicionesIniciales();
+                break;
+            case 'carnes':
+                index = carnes.indexOf(respuesta);
+                if (index > -1){                    
+                    carnes.splice(index, 1);
+                    alert(`El producto ${respuesta} ha sido eliminado de la lista`);                    
+                } else{
+                    alert(`El producto ${respuesta} no se encuentra en la lista`);
+                } 
+                listaCompra();
+                condicionesIniciales();
+                break;
+            case 'dulces':
+                index = dulces.indexOf(respuesta);
+                if (index > -1){
+                    dulces.splice(index, 1);
+                    alert(`El producto ${respuesta} ha sido eliminado de la lista`);
+                } else{
+                    alert(`El producto ${respuesta} no se encuentra en la lista`);
+                } 
+                listaCompra();
+                condicionesIniciales();
+                break;
+            case 'aseo':
+                index = aseo.indexOf(respuesta);
+                if (index > -1){
+                    aseo.splice(index, 1);
+                    alert(`El producto ${respuesta} ha sido eliminado de la lista`);
+                } else{
+                    alert(`El producto ${respuesta} no se encuentra en la lista`);
+                }    
+                listaCompra();
+                condicionesIniciales();
+                break;
+            case 'verduras':
+                index = verduras.indexOf(respuesta);
+                if (index > -1){
+                    verduras.splice(index, 1);
+                    alert(`El producto ${respuesta} ha sido eliminado de la lista`);
+                } else{
+                    alert(`El producto ${respuesta} no se encuentra en la lista`);
+                } 
+                listaCompra();
+                condicionesIniciales();
+                break;
+            case 'otros':
+                index = otros.indexOf(respuesta);
+                if (index > -1){
+                    otros.splice(index, 1);
+                    alert(`El producto ${respuesta} ha sido eliminado de la lista`);
+                } else{
+                    alert(`El producto ${respuesta} no se encuentra en la lista`);
+                }
+                listaCompra();
+                condicionesIniciales();
                 break;
             default:
                 alert('No se ha seleccionado una categoría');
