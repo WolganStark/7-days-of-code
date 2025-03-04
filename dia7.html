@@ -22,25 +22,29 @@
     </header>
     <main class="elementos">
         <section class="elementos__contenido">
-            <h1 class="elementos__contenido__titulo">7 Days Of Code - Día 2</h1>
-            <h2 class="elementos__contenido__subtitulo">Interacción con el usuario.</h2>
-            <p class="elementos__contenido__texto">En esta página encontrarás el desarrollo del reto correspondiente al segundo día.</p>
-            <p class="elementos__contenido__texto">El reto consiste en interactuar con el usuario de la página, a través de prompts y alerts, pero quise darle un poco más de personalización al añadir modificaciones al DOM mediante el código en JavaScript y así ofrecer la máxima personalización conforme al reto.</p>
+            <h1 class="elementos__contenido__titulo">7 Days Of Code - Día 7</h1>
+            <h2 class="elementos__contenido__subtitulo">Calculadora.</h2>
+            <p class="elementos__contenido__texto">En esta página encontrarás el desarrollo del reto correspondiente al septimo día.</p>
+            <p class="elementos__contenido__texto">El reto del último día consiste en crear funciones para ejecutar una calculadora desde el navegador.</p>
             <p class="elementos__contenido__texto">Te invito a participar e interactuar con la página.</p>            
         </section>
         <section class ="elementos__inputs">
-            <h2 class="elementos__inputs__subtitulo" id="preguntas" aria-live="polite"></h2>
+            <h2 class="elementos__inputs__subtitulo" id="instrucciones" aria-live="polite">Ingresa los número a operar y selecciona la operación.</h2>
             <div class="elementos__inputs__div">
-                <input type="text" id="respuesta" class="elementos__inputs__div__input" placeholder="Escribe tu respuesta">
-                <button class="elementos__inputs__div__button" id="button" onclick="agregarRespuesta()">Añadir</button>
+                <input type="text" id="primerNumero" class="elementos__inputs__div__input" placeholder="1er Número">
+                <input type="text" id="segundoNumero" class="elementos__inputs__div__input2" placeholder="2do Número">
+                <button class="elementos__inputs__div__button1" id="sumar" onclick="sumar()">Sumar</button>
+                <button class="elementos__inputs__div__button2" id="restar" onclick="restar()">Restar</button>
+                <button class="elementos__inputs__div__button3" id="multiplicar" onclick="multiplicar()">Multiplicar</button>
+                <button class="elementos__inputs__div__button4" id="dividir" onclick="dividir()">Dividir</button>
+                <button class="elementos__inputs__div__button" id="salir" onclick="salir()">Salir</button>
             </div>
             <div class="elementos__inputs__respuestas">
-                <p class="elementos__inputs__respuestas__texto" id="respuestas" aria.live="polite"></p>
-                <p class="elementos__inputs__respuestas__texto" id="respuestas2" aria.live="polite"></p>
+                <p class="elementos__inputs__respuestas__texto" id="resultado" aria.live="polite"></p>                
             </div>
         </section>
     </main>
     <footer class="footer"><p>Desarollado por Nicolás Staffelbach</p></footer>
-    <script src="./js/app2.js" defer></script>
+    <script src="./js/app7.js" defer></script>
 </body>
 </html>

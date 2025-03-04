@@ -100,7 +100,17 @@ body{
 }
 
 .elementos__inputs__div__input{    
-    width: 100%;
+    width: 36%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 25px 0 0 25px;
+    font-size: 1.2rem;
+    font-family: var(--fuente-raleway);
+    font-weight: 500;    
+}
+
+.elementos__inputs__div__input2{    
+    width: 36%;
     padding: 10px;
     border: 2px solid #000000;
     border-radius: 0 0 0 0;
@@ -113,7 +123,7 @@ body{
     width: 70%;
     padding: 10px;
     border: 2px solid #000000;
-    border-radius:25px 0 0 25px;
+    border-radius:25px 25px 25px 25px;
     font-size: 1.2rem;
     font-family: var(--fuente-raleway);
     font-weight: 500;
@@ -146,12 +156,89 @@ body{
     font-weight: 500;
     font-size: 1.2rem;
 }
+
+.elementos__inputs__div__button1{
+    width: 25%;
+    justify-content: center;
+    border-radius: 0 0px 0px 0;
+    font-family: var(--fuente-raleway);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.elementos__inputs__div__button1:hover{
+    background-color: var(--color-terciario);
+    cursor: pointer;
+}
+
+.elementos__inputs__div__button2{
+    width: 25%;
+    justify-content: center;
+    border-radius: 0 0px 0px 0;
+    font-family: var(--fuente-raleway);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.elementos__inputs__div__button2:hover{
+    background-color: var(--color-terciario);
+    cursor: pointer;
+}
+
+.elementos__inputs__div__button3{
+    width: 33%;
+    justify-content: center;
+    border-radius: 0 0px 0px 0;
+    font-family: var(--fuente-raleway);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.elementos__inputs__div__button3:hover{
+    background-color: var(--color-terciario);
+    cursor: pointer;
+}
+
+.elementos__inputs__div__button4{
+    width: 25%;
+    justify-content: center;
+    border-radius: 0 0px 0px 0;
+    font-family: var(--fuente-raleway);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.elementos__inputs__div__button4:hover{
+    background-color: var(--color-terciario);
+    cursor: pointer;
+}
+
 .elementos__inputs__div__button:hover{
     background-color: var(--color-terciario);
     cursor: pointer;
 }
 
 .elementos__inputs__div__button:disabled{
+    background-color: #898989;
+    cursor: not-allowed;
+}
+
+.elementos__inputs__div__button1:disabled{
+    background-color: #898989;
+    cursor: not-allowed;
+}
+
+.elementos__inputs__div__button2:disabled{
+    background-color: #898989;
+    cursor: not-allowed;
+}
+
+.elementos__inputs__div__button3:disabled{
+    background-color: #898989;
+    cursor: not-allowed;
+}
+
+.elementos__inputs__div__button4:disabled{
     background-color: #898989;
     cursor: not-allowed;
 }
