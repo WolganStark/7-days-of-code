@@ -15,10 +15,16 @@ Simplente hay que escribir los datos en el espacio designado para ello y hacer c
 La manera de interactúar con la página es responder a las preguntas como se indican.
 <p align ="center"> <img src="https://github.com/user-attachments/assets/cdfe7525-dd25-4fe8-854f-c18f473250cb"></p>
 
+4. `Juego del número secreto`: El cuarto día del reto consiste en crear el juego del número secreto que jugamos con nuestros amigos, haciendo uso de la lógica y las herramientas que tiene JavaScript, para que sea el computador el que escoja un número pseudo-aleatorio y que sea el usuario el que lo adivine. ¡Sólo tiene 3 intentos!.
+<p align ="center"><img src="https://github.com/user-attachments/assets/a8d516ea-1b83-4270-9a7f-308716e5ca52"</p>
+
+5. `La lista de la compra`: El quinto día del reto consiste en utilizar los `array` de JavaScript para crear listas de la compra divididas en distintas categorias de manera que ayude a hacer la compra de manera ordenada. Adicionalmente el programa que creé utiliza bucles `for` para tomar todos los valores guardados en las listas en JavaScript y mostrarlos en la página a través del metodo `.innerHTML`, y adicionalmente haciendo uso de la etiqueta `<select>` creé una lista deplegable que le permite al usuario escoger la lista, mejorando la interacción con el usuario.
+<p align ="center"><img src="https://github.com/user-attachments/assets/aa02c418-8357-4092-bc80-360d42c3e208"></p>
 
 
-### :white_check_mark:Tecnologías utilizadas
+
+### :white_check_mark:Tecnologías utilizadas!
+
 - `HTML`: El lenguaje de marcado por excelencia para el desarrollo WEB.
 - `CSS`: El lenguaje de estilos utilizado en el desarrollo WEB.
 - `JavaScript`: Dónde la magía ocurre y la lógica de todo el reto sucede detrás de cámaras.
-
