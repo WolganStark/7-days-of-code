@@ -24,6 +24,10 @@ La manera de interactúar con la página es responder a las preguntas como se in
 6. `Eliminación de la lista de la compra`: El sexto día del reto consiste en utilzar metodos para la manipulación de `arrays` en JavaScript como `.indexOf` y `.splice` lo que permite saber si un elemento se encuentra en una lista y poder eliminarlo.
 <p align="center"><img src="https://github.com/user-attachments/assets/e43808d8-fb88-4a05-87fe-ca4579d79c69"></p>
 
+7. `Calculadora usando funciones`: El septimo y último día del reto de #7DaysOfCode consiste en crear una calculadora usando funciones en JavaScript. Espero que hayan disfrutado de mi aprendizaje así como yo disfruté del proceso de desarrollo del reto.
+<p align ="center"><img src="https://github.com/user-attachments/assets/f6df51fd-9477-4a12-bee7-79ca405976f6"></p>
+
+
 ### :white_check_mark:Tecnologías utilizadas!
 
 - `HTML`: El lenguaje de marcado por excelencia para el desarrollo WEB.
