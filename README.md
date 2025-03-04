@@ -21,7 +21,8 @@ La manera de interactúar con la página es responder a las preguntas como se in
 5. `La lista de la compra`: El quinto día del reto consiste en utilizar los `array` de JavaScript para crear listas de la compra divididas en distintas categorias de manera que ayude a hacer la compra de manera ordenada. Adicionalmente el programa que creé utiliza bucles `for` para tomar todos los valores guardados en las listas en JavaScript y mostrarlos en la página a través del metodo `.innerHTML`, y adicionalmente haciendo uso de la etiqueta `<select>` creé una lista deplegable que le permite al usuario escoger la lista, mejorando la interacción con el usuario.
 <p align ="center"><img src="https://github.com/user-attachments/assets/aa02c418-8357-4092-bc80-360d42c3e208"></p>
 
-
+6. `Eliminación de la lista de la compra`: El sexto día del reto consiste en utilzar metodos para la manipulación de `arrays` en JavaScript como `.indexOf` y `.splice` lo que permite saber si un elemento se encuentra en una lista y poder eliminarlo.
+<p align="center"><img src="https://github.com/user-attachments/assets/e43808d8-fb88-4a05-87fe-ca4579d79c69"></p>
 
 ### :white_check_mark:Tecnologías utilizadas!
 
